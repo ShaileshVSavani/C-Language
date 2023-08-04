@@ -1,0 +1,88 @@
+
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int choice;
+	clrscr();
+	printf("Enter....!!\n");
+	printf("1)English\n");
+	printf("2)Hindi\n");
+	printf("3)Gujrati\n");
+	printf("Enter choice:");
+	scanf("%d",&choice);
+	printf("\n");
+	switch(choice)
+	{
+		case 1:
+			printf("Enter...!!\n");
+			printf("Press 1 for Internate Recharge\n");
+			printf("Press 2 for Top-Up Recharge\n");
+			printf("Press 3 for Special Recharge\n");
+			printf("\n");
+			printf("Enter Your Choice :");
+			scanf("%d",&choice);
+			switch(choice)
+			{
+			case 1:
+			printf("You have done successfully Internate Recharge");
+			break;
+			case 2:
+			printf("You have done successfulullu Top-Up Recharge");
+			break;
+			case 3:
+			printf("You have done successfully Special Recharge");
+			break;
+			default:
+			printf("You have not done any Recharge");
+			}
+			break;
+		  case 2:
+			printf("Enter...!!\n");
+			printf("Internet Recharge ke liye 1 dabaiye\n");
+			printf("Top-Up Recharge ke liye 2 dabaiye\n");
+			printf("Special Recharge ki liye 3 dabaiye\n");
+			printf("Enter Your Choice:");
+			printf("\n");
+			scanf("%d",&choice);
+			switch(choice)
+			{
+			case 1:
+			printf("Apne safalatapurvak Internet Recharge kar liya he\n");
+			break;
+			case 2:
+			printf("Apne safalatapurvak Top_up Recharge kar liya he\n");
+			break;
+			case 3:
+			printf("Apne safaltapurvak Special Recharge kar liye he\n");
+			break;
+			default:printf("Apne koi Recharge karvaya nahi hai\n");
+			}
+			break;
+		case 3:
+			printf("Enter....!!\n");
+			printf("Internet Recharge mate 1 dabavo\n");
+			printf("Top-Up Recharge mate 2 dabavi\n");
+			printf("Special Recharge mate 3 dabavo\n");
+			printf("\n");
+			printf("Enter Your Choice:");
+			scanf("%d",&choice);
+			switch(choice)
+			{
+			case 1:
+			printf("Tame safalatapurvak Internet Recharge karyu che\n");
+			break;
+			case 2:
+			printf("Tame safalatapurvak Top-Up Recharge karyu che\n");
+			break;
+			case 3:
+			printf("Tame safalatapurvak Special Recharge karyu che\n");
+			default:
+			printf("Tame koi Recharge karavyu nathi");
+			}
+		default:printf("Invalid Language");
+	}
+
+	getch();
+
+}
