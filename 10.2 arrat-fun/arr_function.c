@@ -46,10 +46,6 @@ void insert(int a[],int n){
 	
 	printf("\nEnter position:");
 	scanf("%d",&pos);
-	if (pos < 0 || pos > n) {
-    printf("Invalid position!\n");
-    return;
-    }
 	
 	for(i=n;i>pos;i--){
 		a[i]=a[i-1];
@@ -66,14 +62,9 @@ void delete(int a[],int n){
 	int i,pos,val;
 	printf("\nEnter position:");
 	scanf("%d",&pos);
-	if (pos < 0 || pos >= n) {
-    printf("Invalid position!\n");
-    return;
-    }
-
+	
 	for(i=pos;i<n;i++){
 		a[i]=a[i+1];
-	//	pos=i;
 	}
 	 n--  ;
 	 printf("\nNew array is:");
@@ -84,10 +75,8 @@ void delete(int a[],int n){
 
 void update(int a[], int n){
 	int i,pos,val;
-	printf("Enter the position: ");
-    scanf("%d", &pos);
-    printf("\nEnter new element's value: ");
-    scanf("%d", &val);
+	printf("Enter the position and new element's value: ");
+    scanf("%d %d", &pos, &val);
 
     if (pos >= 0 && pos < n) {
         a[pos] = val;
@@ -122,6 +111,8 @@ void array(int a[], int n){
         printf("4. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
+
+        int pos, element;
 
         switch (choice) {
                 case 1:
